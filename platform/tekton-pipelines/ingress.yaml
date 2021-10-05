@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tekton-dashboard
+  namespace: tekton-pipelines
+  labels:
+    cert-manager.io/cluster-issuer: "selfsigned-cluster-issuer"
+spec:
+  rules:
+  - host: tekton.khuedoan.com
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: tekton-dashboard
+            port:
+              name: http
+  tls:
+  - hosts:
+    - tekton.khuedoan.com
+    secretName: tekton-tls-certificate
