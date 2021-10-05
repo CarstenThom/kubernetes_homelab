@@ -3,11 +3,11 @@ kube-prometheus-stack:
     ingress:
       enabled: true
       hosts:
-      - grafana.khuedoan.com
+      - grafana.t-hom.net
       tls:
       - secretName: grafana-general-tls
         hosts:
-        - grafana.khuedoan.com
+        - grafana.t-hom.net
     additionalDataSources:
     - name: Loki
       type: loki

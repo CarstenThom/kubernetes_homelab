@@ -5,7 +5,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/khuedoan/homelab.git
+      repoURL: https://github.com/CarstenThom/kubernetes_homelab.git
       revision: master
       directories:
       - path: platform/*
@@ -20,7 +20,7 @@ spec:
         namespace: '{{path.basename}}'
       project: default
       source:
-        repoURL: https://github.com/khuedoan/homelab.git
+        repoURL: https://github.com/CarstenThom/kubernetes_homelab.git
         path: '{{path}}'
       syncPolicy:
         automated:

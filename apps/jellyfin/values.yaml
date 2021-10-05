@@ -3,8 +3,8 @@ jellyfin:
     main:
       enabled: true
       hosts:
-      - host: jellyfin.khuedoan.com
+      - host: jellyfin.t-hom.net
       tls:
       - secretName: jellyfin-tls-certificate
         hosts:
-        - jellyfin.khuedoan.com
+        - jellyfin.t-hom.net

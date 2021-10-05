@@ -6,7 +6,7 @@ metadata:
     cert-manager.io/cluster-issuer: "selfsigned-cluster-issuer"
 spec:
   rules:
-  - host: argocd.khuedoan.com
+  - host: argocd.t-hom.net
     http:
       paths:
       - path: /
@@ -18,5 +18,5 @@ spec:
               name: http
   tls:
   - hosts:
-    - argocd.khuedoan.com
+    - argocd.t-hom.net
     secretName: argocd-secret
