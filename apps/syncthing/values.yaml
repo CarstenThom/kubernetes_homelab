@@ -5,15 +5,14 @@ syncthing:
       annotations:
         cert-manager.io/cluster-issuer: "selfsigned-cluster-issuer"
       hosts:
-      - host: syncthing.t-hom.net
+      - host: syncthing.flowgenie.de
         paths:
         - path: /
           pathType: Prefix
       tls:
       - secretName: syncthing-tls-certificate
         hosts:
-        - syncthing.t-hom.net
-  persistence:
+        - syncthing.flowgenie.de
     data:
       enabled: true
       size: 10Gi

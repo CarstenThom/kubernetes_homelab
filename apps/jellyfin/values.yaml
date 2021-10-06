@@ -3,8 +3,8 @@ jellyfin:
     main:
       enabled: true
       hosts:
-      - host: jellyfin.t-hom.net
+      - host: jellyfin.flowgenie.de
       tls:
       - secretName: jellyfin-tls-certificate
         hosts:
-        - jellyfin.t-hom.net
+        - jellyfin.flowgenie.de

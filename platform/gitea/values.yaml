@@ -4,14 +4,14 @@ gitea:
     annotations:
       cert-manager.io/cluster-issuer: "selfsigned-cluster-issuer"
     hosts:
-      - host: git.t-hom.net
+      - host: git.flowgenie.de
         paths:
           - path: /
             pathType: Prefix
     tls:
     - secretName: gitea-tls-certificate
       hosts:
-        - git.t-hom.net
+        - git.flowgenie.de
   gitea:
     config:
       server:
